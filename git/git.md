@@ -52,9 +52,9 @@ git init 명령어로 로컬 저장소를 생성
 특정 버전으로 남긴다 → “커밋(commit)한다”
 
 커밋의 3가지 영역
-working Directory : 내가 작업하고 있는 실제 디렉토리
-staging Area : 커밋(commit)으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳
-Repository : 커밋(commit)들이 저장되는 곳
+- working Directory : 내가 작업하고 있는 실제 디렉토리
+- staging Area : 커밋(commit)으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳
+- Repository : 커밋(commit)들이 저장되는 곳
 
 working   에서 staging으로 갈때는 git add 명령어
 staging  에서 repository으로 갈때는 git commit 명령어
@@ -66,11 +66,11 @@ git diff A B
 A랑 B를 비교
 
 ## git 올릴 때
-- git add .
-- git commit -m”(이름)”
-- git remote add origin {remote_repo}
-- git push -u origin master
-- git push
+1. git add .
+2. git commit -m”(이름)”
+3. git remote add origin {remote_repo}
+4. git push -u origin master
+5. git push
 
 바로 vs코드 열기 code .
 
