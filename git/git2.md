@@ -99,6 +99,16 @@
 - 수정하고 다시 add commit 한다
 ## git-flow
 - 2010년 Vincent Driessen이 제안한 git 브랜치 전략
+## HEAD
+- "This is a pointer to the local branch you're currently on"
+- HEAD가 현재 브랜치의 최신 커밋을 가리킨다고 할 수 있음
+- git log 혹은 cat.git/HEAD를 통해서 현재 HEAD가 어떤 브랜치를 가리키는지 알 수 있음
+## 원복 원격 저장소를 그대로 내 원격 저장소에 복제 (이러한 행위를 Fork라고 함)
+## 이후 Pull Request를 통해 원본 원격 저장소에 반영될 수 있도록 요청함
+
+
+
+
 ## 정리
 - 결국 어떤 브랜치 전략을 사용할 것인지는 팀에서 정리하는 문제
 - 브랜치를 자주 생성하는 것을 강력히 권장하며, main(master) 브랜치 하나로만 작업하는 형태는 지양해야 함
