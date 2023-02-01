@@ -22,4 +22,4 @@
 - 객체 생성 시에는 Lombok의 @Burilder를 쓰면 좋다. 직접 내용을 입력하면 실수할 경우 타격이 크다. 따라서 @Burilder를 이용해서 매핑하는 편이 좋다.
 - AUTOINCREMENT로 하면 양수만 사용하는데 범위를 키우고 싶다면 INT UNSIGNED 사용한다
 - db 보안과 민감 정보 보호를 위해서 entity 값 그대로 주면 안되고 새로운 객체에 담아서 반환한다
-- CORS는 BACK에서 해결 (Spring Security)
+- CORS는 BACK에서 해결 (Spring Security).
