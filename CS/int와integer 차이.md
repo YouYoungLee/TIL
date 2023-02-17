@@ -14,4 +14,4 @@
 - null로 초기화 불가
 2. Integer : 래퍼 클래스(Wrapper class)
 - Unboxing하지 않을 시 산술 연산 불가능함
-- null 값 처리 가능
+- null 값 처리 가능!
