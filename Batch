@@ -1,1 +1,5 @@
 # 테스트
+JAVA에서 고정길이변수 받는법
+1. SELECT할 때 오라클 PAD 이용
+2. JAVA에서 set메서드로 받을 때 반복문 또는 java11이상 repeat 사용
+3. oracle에 넣을 때(insert) PAD 이용
