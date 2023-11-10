@@ -33,3 +33,18 @@ JAVA에서 고정길이변수 받는법
 7.Camel Case (낙타 표기법):
   첫 단어는 소문자로 시작하며, 이후 각 단어의 첫 글자는 대문자로 작성합니다.
   int myVariableName;
+
+mapper.xml 쿼리문에서 상수값을 가져오고 싶다면 mybatis config properties에 작성하여 가져올 수 있음
+ex)  <properties>
+        <property name="G_TLF_TERM_TOTAL_M" value="JV_TLF_TERM_TOTAL"/>
+        <property name="G_TLF_TERM_TOTAL_T" value="JV_TLF_TERM_TOTAL_TEMP"/>
+        <property name="G_TLF_MOTO_TOTAL_BATCH_T" value="JV_TLF_MOTO_TOTAL_BATCH"/>
+        <property name="G_TLF_MOTO_TOTAL_M" value="JV_TLF_MOTO_TOTAL"/>
+        <property name="G_TLF_COTO_TOTAL_M" value="JV_TLF_COTO_TOTAL"/>
+        <property name="G_TLF_BOTO_TOTAL_M" value="JV_TLF_BOTO_TOTAL"/>
+        <property name="G_TLF_TOTO_TOTAL_M" value="JV_TLF_TOTO_TOTAL"/>
+        <property name="G_TLF_IOTO_TOTAL_M" value="JV_TLF_IOTO_TOTAL"/>
+        <property name="G_TLF_ETC_TOTAL_M" value="JV_TLF_ETC_TOTAL"/>
+      </properties>
+
+       ${G_TLF_TERM_TOTAL_T}
