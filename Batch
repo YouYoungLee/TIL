@@ -3,3 +3,33 @@ JAVA에서 고정길이변수 받는법
 1. SELECT할 때 오라클 PAD 이용
 2. JAVA에서 set메서드로 받을 때 반복문 또는 java11이상 repeat 사용
 3. oracle에 넣을 때(insert) PAD 이용
+
+# JAVA 명명 규칙
+1. 클래스 이름(Class Names):
+  첫 글자는 대문자로 시작합니다.
+  Camel Case를 사용하여 각 단어의 첫 글자를 대문자로 적습니다.
+  public class MyClass {
+      // 클래스 내용
+  }
+2. 인터페이스 이름(Interface Names):
+  클래스와 동일하게 첫 글자는 대문자, Camel Case 사용
+  public interface MyInterface {
+      // 인터페이스 내용
+  }
+3. 메서드 이름(Method Names):
+  소문자로 시작하며, Camel Case를 사용
+  public void myMethod() {
+      // 메서드 내용
+  }
+4. 변수 이름(Variable Names):
+  소문자로 시작하며, Camel Case를 사용
+  int myVariable = 10;
+5. 상수 이름(Constant Names):
+  대문자로 작성하며, 단어 사이를 언더스코어(_)로 구분
+  public static final int MAX_VALUE = 100;
+6. 패키지 이름(Package Names):
+  모두 소문자로 작성되며, 필요시 점으로 구분
+  package com.example.myproject;
+7.Camel Case (낙타 표기법):
+  첫 단어는 소문자로 시작하며, 이후 각 단어의 첫 글자는 대문자로 작성합니다.
+  int myVariableName;
