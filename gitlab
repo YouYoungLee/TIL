@@ -1,0 +1,18 @@
+접근권한	담당	역할
+Owner	MSA PL	- 그룹 / 프로젝트 생성자
+- 그룹 / 프로젝트 내 수행되는 모든 권한 포함
+- 멤버 권한부여, 프로젝트 / 마일스톤 / 이슈 관리 등 전체 GitLab 프로젝트 수행에 필요한 권한을 부여
+Maintainer	개발리더	- 그룹 / 프로젝트 내 수정/삭제 권한 제외 Owner와 동일한 권한
+- Issue 및 브랜치를 생성하여 개발자에게 업무를 부여하고, 개발된 소스코드에 대한 소스리뷰 및 Merge Request를 승인하는 역할
+- Master Branch에 Push하거나, Release하는 역할
+Developer	개발자	- 신규 개발 또는 유지보수 담당
+- 새로운 브랜치 생성 및 Push가 가능하지만, Maintainer에 의해 할당된 이슈와 브랜치에서 개발 수행
+- Protected 브랜치를 제외한 모든 브랜치에 push 가능. Develop 브랜치에 Push 권한을 제거하기 위해 main 브랜치 이외에 develop 브랜치를 protected 브랜치로 구성
+# Protected 브랜치 구성 방법 : Project - 3) 프로젝트 등록 과정이 완료된 이후 설정 가능 > Settings > Repository > Protected Branches > Allowed to merge/Allowed to push 설정
+
+
+- 개발 후 코드리뷰 및 Develop 브랜치에 머지 요청
+Reporter	QA	- 이슈 관리 가능
+- Merge 또는 Push 권한이 없음
+- Merge Request 생성 가능
+Guest	운영리더/운영자	- 프로젝트를 직접적으로 수행하지는 않지만, 프로젝트에 커멘트를 남기거나 그룹 / 프로젝트 조회가 가능한 권한
