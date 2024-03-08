@@ -1,0 +1,1 @@
+데이터를 읽는 ItemReader, 데이터 처리 ItemProcessor, 데이터 쓰기 ItemWriter 3개 역할로 나눠서 수행
