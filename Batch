@@ -56,3 +56,6 @@ AOP는 Aspect Oriented Programming의 약자로 관점 지향 프로그래밍이
  
 AOP에서 각 관점을 기준으로 로직을 모듈화한다는 것은 코드들을 부분적으로 나누어서 모듈화하겠다는 의미다. 이때, 소스 코드상에서 다른 부분에 계속 반복해서 쓰는 코드들을 발견할 수 있는 데 이것을 흩어진 관심사 (Crosscutting Concerns)라 부른다. 
 위와 같이 흩어진 관심사를 Aspect로 모듈화하고 핵심적인 비즈니스 로직에서 분리하여 재사용하겠다는 것이 AOP의 취지다.
+
+JOB - STEP
+STEP 내부에는 tasklet 혹은 ItemReader ItemProcessor ItemWriter이 존재한다.
