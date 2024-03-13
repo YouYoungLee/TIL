@@ -1,1 +1,19 @@
 데이터를 읽는 ItemReader, 데이터 처리 ItemProcessor, 데이터 쓰기 ItemWriter 3개 역할로 나눠서 수행
+
+Spring Batch에서의 Chunk란 데이터 덩어리로 작업 할 때 각 커밋 사이에 처리되는 row 수를 얘기합니다.
+즉, Chunk 지향 처리란 한 번에 하나씩 데이터를 읽어 Chunk라는 덩어리를 만든 뒤, Chunk 단위로 트랜잭션을 다루는 것을 의미합니다.
+
+여기서 트랜잭션이라는게 중요한데요.
+Chunk 단위로 트랜잭션을 수행하기 때문에 실패할 경우엔 해당 Chunk 만큼만 롤백이 되고, 이전에 커밋된 트랜잭션 범위까지는 반영이 된다는 것입니다.
+
+Reader에서 데이터를 하나 읽어옵니다
+읽어온 데이터를 Processor에서 가공합니다
+가공된 데이터들을 별도의 공간에 모은 뒤, Chunk 단위만큼 쌓이게 되면 Writer에 전달하고 Writer는 일괄 저장합니다.
+
+
+정리하면 Spring Batch의 Reader에서 읽어올 수 있는 데이터 유형은 다음과 같습니다.
+- 입력 데이터에서 읽어오기
+- 파일에서 읽어오기
+- Database에서 읽어오기
+- Java Message Service등 다른 소스에서 읽어오기
+- 본인만의 커스텀한 Reader로 읽어오기
