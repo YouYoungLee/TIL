@@ -17,3 +17,17 @@ Reader에서 데이터를 하나 읽어옵니다
 - Database에서 읽어오기
 - Java Message Service등 다른 소스에서 읽어오기
 - 본인만의 커스텀한 Reader로 읽어오기
+
+Cursor는 실제로 JDBC ResultSet의 기본 기능입니다.
+ResultSet이 open 될 때마다 next() 메소드가 호출 되어 Database의 데이터가 반환 됩니다.
+이를 통해 필요에 따라 Database에서 데이터를 Streaming 할 수 있습니다.
+
+반면 Paging은 좀 더 많은 작업을 필요로 합니다.
+Paging 개념은 페이지라는 Chunk로 Database에서 데이터를 검색한다는 것입니다.
+즉, 페이지 단위로 한번에 데이터를 조회해오는 방식입니다.
+
+
+chunk
+<Pay, Pay> 에서 첫번째 Pay는 Reader에서 반환할 타입이며, 두번째 Pay는 Writer에 파라미터로 넘어올 타입을 얘기합니다.
+chunkSize로 인자값을 넣은 경우는 Reader & Writer가 묶일 Chunk 트랜잭션 범위입니다.
+Chunk에 대한 자세한 이야기는 쳅터 6을 참고해보세요.
