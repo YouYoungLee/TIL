@@ -59,3 +59,8 @@ AOP에서 각 관점을 기준으로 로직을 모듈화한다는 것은 코드�
 
 JOB - STEP
 STEP 내부에는 tasklet 혹은 ItemReader ItemProcessor ItemWriter이 존재한다.
+
+ItemReader에서 jobExecution 가져오기
+JobExecution jobExecution = StepSynchronizationManager.getContext().getStepExecution().getJobExecution()
+ExecutionContext jobExecutionContext = jobExecution.getExecutionContext();
+JobStatDto js = (JobStatDto) jobExecutionContext.get("js");
