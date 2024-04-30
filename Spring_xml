@@ -1,0 +1,7 @@
+web.xml은 DD (Deployment Descriptor : 배포 설명자)라고 불리며, Web Application의 설정파일
+
+web.xml 은 Web Application Deployment Descriptor이며 xml형식의 파일이다. (DD라고도 부름)
+WEB-INF 하위에 위치하며, 톰캣 구동 시, WEB-INF/web.xml을 읽어 Web Application(톰캣)의 설정을 적용하기 위해 존재한다. 
+
+
+서블릿 = http 통신등을 할 때 규칙을 정의해 놓아서 개발자들이 중심 로직에만 집중할 수 있게 해줌
