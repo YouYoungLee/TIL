@@ -1,7 +1,14 @@
-web.xml은 DD (Deployment Descriptor : 배포 설명자)라고 불리며, Web Application의 설정파일
+web.xml은 DD (Deployment Descriptor : 배포 설명자)라고 불리며, Web Application의 설정파일 여러 xml 파일을 인식하도록 각 파일을 지정
 
 web.xml 은 Web Application Deployment Descriptor이며 xml형식의 파일이다. (DD라고도 부름)
 WEB-INF 하위에 위치하며, 톰캣 구동 시, WEB-INF/web.xml을 읽어 Web Application(톰캣)의 설정을 적용하기 위해 존재한다. 
 
 
 서블릿 = http 통신등을 할 때 규칙을 정의해 놓아서 개발자들이 중심 로직에만 집중할 수 있게 해줌
+
+DispatcherServlet을 설정함으로써 다음과 같은 기능을 활용할 수 있습니다:
+
+Spring MVC의 기능 활용: Spring MVC를 사용하여 HTTP 요청을 처리하고, 컨트롤러를 관리할 수 있습니다.
+Handler Mapping 및 Handler Adapter 등록: DispatcherServlet은 요청을 처리하기 위해 Handler Mapping 및 Handler Adapter와 같은 여러 요소를 등록하고 활용합니다.
+View Resolver 등록: DispatcherServlet은 뷰 리졸버(View Resolver)를 등록하여 요청에 대한 뷰를 결정하고 렌더링할 수 있습니다.
+WebApplicationContext 로딩: contextConfigLocation을 통해 지정된 Spring의 설정 파일을 로드하여 웹 애플리케이션의 컨텍스트를 초기화합니다.
