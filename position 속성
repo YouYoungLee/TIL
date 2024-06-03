@@ -1,0 +1,42 @@
+position의 속성은 총 5가지가 있습니다.
+- position: static; → 기본값 (이동이 불가합니다.)
+- position: relative;
+- position: absolute;
+- position: fixed;
+- position: sticky;
+
+
+relative
+position: relative; 
+자기 자신을 기준으로 이동합니다.
+
+absolute
+position: absolute; 
+이름과 같이 절대적인 위치에 둘 수 있습니다.
+부모를 기준으로 이동합니다. 부모 중에 position이 relative, fixed, absolute 하나라도 있으면 그 부모를 기준으로 절대적으로 움직이게 됩니다.
+
+Sticky
+position: sticky;
+스크롤 영역 기준으로 배치합니다. 원래 자리에서 최대한 유지 하고 있다가 부모 컨테이너안에서 스크롤링시 스크롤링 방향에 따라 지정된 포지션에서 유지 하도록 노력하는 속성입니다.
+
+Fixed
+position: fixed;
+말그대로 고정됐다는 뜻입니다.
+viewport(window 기준)를 기준으로 배치합니다.
+
+
+최종 정리
+
+position의 속성 5가지
+- position: static; → 기본값 (이동이 불가합니다.)
+- position: relative;
+- position: absolute;
+- position: fixed;
+- position: sticky;
+
+각 속성은 기준에 차이가 있다.
+(해당 기준에서 top, right, bottom, left 프로퍼티의 값만큼 움직인다.)
+- position: relative; : 자기 자신이 기준
+- position: absolute; : 자신의 부모태그가 기준
+- position: fixed; : viewport 기준
+- position: sticky; : 스크롤 영역 기준
