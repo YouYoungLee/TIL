@@ -16,3 +16,6 @@ Reporter	QA	- 이슈 관리 가능
 - Merge 또는 Push 권한이 없음
 - Merge Request 생성 가능
 Guest	운영리더/운영자	- 프로젝트를 직접적으로 수행하지는 않지만, 프로젝트에 커멘트를 남기거나 그룹 / 프로젝트 조회가 가능한 권한
+
+Branch 생성 후 변경
+git checkout -b feature/~~
