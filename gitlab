@@ -19,3 +19,7 @@ Guest	운영리더/운영자	- 프로젝트를 직접적으로 수행하지는 �
 
 Branch 생성 후 변경
 git checkout -b feature/~~
+
+Branch 이동
+git checkout "전환할 브랜치 이름"
+
