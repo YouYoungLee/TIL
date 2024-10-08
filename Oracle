@@ -40,3 +40,12 @@ DELETE FROM employees WHERE emp_no =112;
 
 ROLLBACK; --롤백
 COMMIT; --커밋
+
+
+
+주석 처리 단축키
+CTRL + - : 주석
+CTRL + SHIFT + - : 주석 해제
+
+자동 완성
+CTRL + SPACE
