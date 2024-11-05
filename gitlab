@@ -23,3 +23,19 @@ git checkout -b feature/~~
 Branch 이동
 git checkout "전환할 브랜치 이름"
 
+프로젝트 덮어쓰기
+git init 
+git remote add origin https://gitlab.com/username/existing-project.git
+git add .
+git commit -m "Replace existing project with new content"
+git push -u origin main --force
+
+만약 거절당하면
+
+. 보호된 브랜치 설정 변경
+GitLab의 프로젝트 설정에서 보호된 브랜치 설정을 수정하여 강제 푸시를 허용할 수 있습니다.
+GitLab 프로젝트의 웹 페이지로 이동합니다.
+Settings > Repository로 이동합니다.
+Protected Branches 섹션으로 스크롤합니다.
+master 브랜치 옆의 설정을 변경하여 강제 푸시를 허용합니다.
+필요에 따라 강제 푸시 권한을 본인에게만 부여하거나 해제할 수 있습니다.
